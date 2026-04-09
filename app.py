@@ -4,8 +4,7 @@ from typing import List, Optional
 import streamlit as st
 from openai import OpenAI
 from pydantic import BaseModel, Field
-
-
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 # -----------------------------
 # Page config
 # -----------------------------
